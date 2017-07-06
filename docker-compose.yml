@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  identityserver.api:
+    image: identityserver.api
+    build:
+      context: ./IdentityServer.API
+      dockerfile: Dockerfile

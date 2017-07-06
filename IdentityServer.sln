@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.14
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServer.API", "IdentityServer.API\IdentityServer.API.csproj", "{3DC5D1A0-18FC-4B90-86D1-BD5AAEA82100}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{752FBFB4-292C-40AD-9A6C-F2FF203DCA1A}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3DC5D1A0-18FC-4B90-86D1-BD5AAEA82100}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DC5D1A0-18FC-4B90-86D1-BD5AAEA82100}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DC5D1A0-18FC-4B90-86D1-BD5AAEA82100}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DC5D1A0-18FC-4B90-86D1-BD5AAEA82100}.Release|Any CPU.Build.0 = Release|Any CPU
+		{752FBFB4-292C-40AD-9A6C-F2FF203DCA1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{752FBFB4-292C-40AD-9A6C-F2FF203DCA1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{752FBFB4-292C-40AD-9A6C-F2FF203DCA1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{752FBFB4-292C-40AD-9A6C-F2FF203DCA1A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
