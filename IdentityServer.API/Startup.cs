@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using IdentityServer.API.Mocks;
 
 namespace IdentityServer.API
 {
@@ -16,7 +17,12 @@ namespace IdentityServer.API
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-			services.AddIdentityServer();
+			services.AddIdentityServer()
+				.AddTemporarySigningCredential()
+				.AddInMemoryApiResources(MockData.ApiResources)
+				.AddInMemoryIdentityResources(MockData.IdentityResources)
+				.AddInMemoryClients(MockData.Clients)
+				.AddTestUsers(MockData.TestUsers.ToList());
 
 			services.AddMvcCore();
         }

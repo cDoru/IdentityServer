@@ -1,0 +1,22 @@
+﻿@model IdentityServer.API.Models.ErrorViewModel
+
+@{ 
+    var error = Model?.Error?.Error;
+    var request_id = Model?.Error?.RequestId;
+}
+
+<h1>Error</h1>
+
+@if (error != null)
+{
+    <strong>
+        <em>
+            : @error
+        </em>
+    </strong>
+}
+
+@if (request_id != null)
+{
+    <div class="request-id">Request Id: @request_id</div>
+}
