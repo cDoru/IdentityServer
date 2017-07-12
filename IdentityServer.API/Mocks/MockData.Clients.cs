@@ -23,15 +23,16 @@ namespace IdentityServer.API.Mocks
 						AllowedGrantTypes = GrantTypes.Implicit,
 						AllowAccessTokensViaBrowser = true,
 
-						RedirectUris = { "http://localhost:5002/callback.html" },
+						RequireConsent = false,
+
+						RedirectUris = { "http://localhost:5002/callback" },
 						PostLogoutRedirectUris = { "http://localhost:5002/" },
 						AllowedCorsOrigins = { "http://localhost:5002" },
 
 						AllowedScopes =
 						{
 							IdentityServerConstants.StandardScopes.OpenId,
-							IdentityServerConstants.StandardScopes.Profile,
-							"api1"
+							IdentityServerConstants.StandardScopes.Profile
 						}
 					}
 				};
